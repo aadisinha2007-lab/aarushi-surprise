@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Aarushi ❤️</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#ff5f9e,#ffc1d6);
+color:white;
+text-align:center;
+overflow:hidden;
+}
+
+.page{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+.card{
+background:rgba(255,255,255,0.15);
+padding:25px;
+border-radius:20px;
+max-width:700px;
+backdrop-filter:blur(10px);
+}
+
+button{
+padding:15px 30px;
+border:none;
+border-radius:50px;
+font-size:18px;
+cursor:pointer;
+margin:10px;
+}
+
+.yes{
+background:white;
+color:#ff4081;
+}
+
+#noBtn{
+position:absolute;
+background:white;
+color:red;
+}
+
+.heart{
+position:absolute;
+font-size:22px;
+animation:float 5s linear infinite;
+}
+
+@keyframes float{
+from{
+transform:translateY(100vh);
+}
+to{
+transform:translateY(-120px);
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+<div class="card">
+
+<h1>❤️ Dear Aarushi ❤️</h1>
+
+<p>
+Shayad hum sirf ek hafte se baat kar rahe hain...
+lekin tum bahut special ban gayi ho.
+
+<br><br>
+
+Tumhari har notification meri smile ki wajah ban jaati hai.
+
+<br><br>
+
+Teri muskaan meri aadat si ban gayi hai,<br>
+Teri baatein meri chahat si ban gayi hain.
+
+<br><br>
+
+Will You Be My Girlfriend? 💍❤️
+
+</p>
+
+<br>
+
+<button class="yes" onclick="acceptLove()">
+YES ❤️
+</button>
+
+<button id="noBtn">
+NO 😝
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+for(let i=0;i<40;i++){
+const heart=document.createElement("div");
+heart.innerHTML="❤️";
+heart.className="heart";
+heart.style.left=Math.random()*100+"vw";
+heart.style.animationDuration=
+(3+Math.random()*4)+"s";
+document.body.appendChild(heart);
+}
+
+function acceptLove(){
+document.body.innerHTML=`
+<div style="
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+background:#ff4f8b;
+color:white;
+text-align:center;
+">
+
+<h1>🎉 YAYYYY ❤️ 🎉</h1>
+
+<h2>
+Thank You Aarushi ❤️
+</h2>
+
+<p>
+You just made Neeraj the happiest person.
+</p>
+
+</div>
+`;
+}
+
+const noBtn=document.getElementById("noBtn");
+
+noBtn.addEventListener("mouseover",()=>{
+
+noBtn.style.left=Math.random()*80+"vw";
+noBtn.style.top=Math.random()*80+"vh";
+
+});
+
+</script>
+
+</body>
+</html>
